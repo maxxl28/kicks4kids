@@ -1,0 +1,297 @@
+<html>
+<title>
+  Kicks4Kids
+</title>
+<head>
+  <link rel="icon" href="https://media.discordapp.net/attachments/1057894616269062197/1124564267065159690/Untitled_design_6.png?width=750&height=750" type="image/png">
+  <link rel="shortcut icon" href="https://media.discordapp.net/attachments/1057894616269062197/1124564267065159690/Untitled_design_6.png?width=750&height=750" type="image/png">
+</head>
+
+<body>
+<nav class="navbar">
+  <div class="navbar-left">
+    <span class="blog-name">Kicks4Kids SD</span>
+  </div>
+  <div class="navbar-right">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="staff.html">About Us</a></li>
+      <li><a href="news.html">Events</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class = "banner">
+  <div class = "image-container">
+    <img src="https://media.discordapp.net/attachments/1057894616269062197/1125885222458769480/image.png?width=1354&height=502">
+    <div class="text-overlay">
+      <h2 id = "typewriter", class = "cool_text_effect">
+        Kicks4Kids SD
+      </h2>
+    </div>
+  </div>
+</div>
+
+<div class = "missionstatement">
+  <h1>
+    Mission Statement
+  </h1>
+  <h3>
+    Kicks4Kids aims to introduce the important qualities of teamwork, exercise, and perseverance to the youth of the community through the beautiful game of soccer. 
+  </h3>
+</div>
+
+<div class="carousel">
+  <div class="slide active">
+    <!--Add the images-->
+    <img src= "" alt="Image 1">
+  </div>
+  <div class="slide">
+    <img src="" alt="Image 2">
+  </div>
+  <div class="slide">
+    <img src="" alt="Image 3">
+  </div>
+</div>
+
+<div class="dots-container">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+</body>
+<!--
+
+-->
+
+</html>
+<style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
+
+body {
+  margin: 0;
+  padding-top: 50px;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 40px;
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 10px solid #3d85c6;
+}
+
+.navbar-left {
+  margin-right: auto;
+}
+
+.blog-name {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Open Sans";
+  color: #3d85c6;
+}
+
+.navbar-right ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  margin: 20px;
+  gap: 5px;
+}
+
+.navbar-right li a {
+  text-decoration: none;
+  color: #3d85c6;
+  font-size: 20px;
+  font-family: "Open Sans";
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+a:hover {
+  opacity: 80%;
+  transition: opacity .5s;
+}
+
+a:hover {
+  background-color: #ffd966;
+  transition: background-color .5s;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%); /* Center the text */
+  /*z-index: 1; /* Set the z-index to be above the image */
+  
+}
+
+.text-overlay h2 {
+  color: #3d85c6;
+  font-size: 70px;
+  text-align: center;
+  animation-name: zoominleft;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  background-color: rgba(255, 217, 102, 0.8); 
+  padding: 20px;
+  font-family: "Oswald";
+  letter-spacing: 5px;
+
+}
+
+.image-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+@keyframes zoominleft {
+  0% {transform: translate(-260%, -30%);}
+  33% {transform: translate(0%, -30%);}
+  67% {transform: translate(0%, -30%);}
+  100% {transform: translate(260%, -30%);}
+}
+
+.missionstatement {
+  text-align: center;
+  overflow-wrap: break-word;
+  border-bottom: 10px solid #3d85c6;
+}
+
+.missionstatement h1 {
+  font-family: "Oswald";
+  color: #3d85c6;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.missionstatement h3 {
+  margin-top: 0px;
+  font-family: "Open Sans";
+  font-size: 20px;
+  overflow-wrap: break-word;
+  text-decoration: none;
+  font-weight: normal;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+.carousel {
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 500px; /* Adjust height as needed */
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dots-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 6px;
+}
+
+.dot.active {
+  background-color: #3d85c6;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+</style>
+
+<script>
+  var slides = document.querySelectorAll('.slide');
+  var dots = document.querySelectorAll('.dot');
+  var currentSlide = 0;
+  var slideInterval = setInterval(nextSlide, 2000);
+  
+  function showSlide(index) {
+    slides.forEach(function(slide) {
+      slide.classList.remove('active');
+    });
+    dots.forEach(function(dot) {
+      dot.classList.remove('active');
+    });
+  
+    slides[index].classList.add('active');
+    dots[index].classList.add('active');
+  }
+  
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+  
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+  
+  dots.forEach(function(dot, index) {
+    dot.addEventListener('click', function() {
+      clearInterval(slideInterval);
+      showSlide(index);
+      slideInterval = setInterval(nextSlide, 2000);
+    });
+  });
+  </script>
