@@ -1,0 +1,28 @@
+{
+  "name": "kicks4kids",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxxl28/kicks4kids.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxxl28/kicks4kids/issues"
+  },
+  "homepage": "https://github.com/maxxl28/kicks4kids#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "carousel": "^0.0.3",
+    "dropdown": "^0.2.0",
+    "nav": "^0.0.2",
+    "navbar": "^2.1.0",
+    "nodemon": "^2.0.22"
+  }
+}
